@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langinfo"
+version = "0.1.0"
+description = "Cross-linguistic inter-sentence memory and intra-sentence UID analysis for causal language models."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "torch>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+]
+docs = [
+    "sphinx>=7.0",
+]
+train = [
+    "sentencepiece>=0.1.99",
+    "transformers>=4.38",
+    "accelerate>=0.27",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

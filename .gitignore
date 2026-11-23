@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Large model weights, tokenized arrays, raw corpora and archives
+*.pt
+*.pt.partial
+*.pt.tmp
+*.npz
+*.tar.gz
+*.zip
+data/
+flores200_dataset/
+models_*/
+prep_*/
+
+# Sphinx build output
+docs/_build/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
